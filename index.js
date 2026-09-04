@@ -4,6 +4,8 @@ const app = express();
 
 app.use(express.json());
 
+app.use(express.static('public'));
+
 const produtos = [
     { id: 1,descricao: "Banana Prata 1kg",preco: 8.99,categoria: "Frutas",estoque: 20},
     { id: 2,descricao: "Leite Integral 1L",preco: 2.99,categoria: "Laticinios",estoque: 30},
